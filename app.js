@@ -37,6 +37,12 @@ app.get("/about", (req, res) => {
     res.redirect('/')
   });
 
+  app.get("/photos/:id", (req, res) => {
+    console.log(req.params.id);
+  });
+
+
+
 app.listen(port,()=> {
     console.log("Port dinleniyor");
 });
